@@ -1,0 +1,18 @@
+<div class="home-container">
+  <h1 class="home-title-h1">Homes</h1>
+
+  <div class="home-container-div">
+    <div data-test="home" *ngFor="let home of homes$ | async">
+      <div data-test="image"><img src="{{home.image}}" width="200" /> </div>
+
+      <div data-test="title" class="home-title">{{home.title}}</div>
+
+      <div data-test="location">{{home.location}}</div>
+
+      <div data-test="book-btn">
+        <button (click)="openDialog()">Book</button>
+      </div>
+    </div>
+  </div>
+
+</div>

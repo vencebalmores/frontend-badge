@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { of } from 'rxjs';
 import { DataService } from '../../services/data.service';
 import { DialogService } from '../../services/dialog.service';
+import { BookComponent } from '../../components/book/book.component';
 
 @Component({
   selector: 'app-homes',
@@ -17,7 +18,11 @@ export class HomesComponent implements OnInit {
     this.homes$ = this.dataService.getHomes$();
   }
 
-  openDialog() {
-    this.dialogService.open();
+  openDialog(home: any) {
+    this.dialogService.open(BookComponent, {
+      width: '400px',
+      height: '500px',
+      data: { home }
+    });
   }
 }

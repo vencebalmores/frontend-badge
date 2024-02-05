@@ -2,16 +2,19 @@
   {
     "title": "Home 1",
     "image": "assets/listing.jpg",
-    "location": "Manila"
+    "location": "Manila",
+    "price": "125"
   },
   {
     "title": "Home 2",
     "image": "assets/listing.jpg",
-    "location": "Quezon City"
+    "location": "Quezon City",
+    "price": "175"
   },
   {
     "title": "Home 3",
     "image": "assets/listing.jpg",
-    "location": "Makati"
+    "location": "Makati",
+    "price": "225"
   }
 ]
